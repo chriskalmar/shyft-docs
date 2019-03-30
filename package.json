@@ -1,0 +1,8 @@
+{
+  "name": "shyft-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chriskalmar/shyft-docs",
+  "author": "Chris Kalmar <christian.kalmar@gmail.com>",
+  "license": "MIT"
+}
