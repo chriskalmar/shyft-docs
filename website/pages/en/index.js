@@ -16,18 +16,14 @@ class HomeSplash extends React.Component {
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const SplashContainer = props => (
-      <div className="homeContainer">
+      <div className="homeContaine hero">
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper">{props.children}</div>
         </div>
       </div>
     );
 
-    const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
+
 
     const ProjectTitle = () => (
       <h2 className="projectTitle">
@@ -53,17 +49,22 @@ class HomeSplash extends React.Component {
     );
 
     return (
-      <SplashContainer>
+      <div className="hero">
         <div className="inner">
-          <Logo img_src={`${baseUrl}img/shyft-logo.svg`} />
+          <img className="logo" src={`${baseUrl}img/shyft-logo-white.svg`} alt="Shyft Logo" />
+
           <br />
-          <ProjectTitle siteConfig={siteConfig} />
+          <h2 className="title">
+            {siteConfig.title}
+          </h2>
+          <small>{siteConfig.tagline}</small>
+
           <PromoSection>
             <Button href={docUrl('docs.html')}>Getting Started</Button>
             <Button href={docUrl('api.html')}>API Reference</Button>
           </PromoSection>
         </div>
-      </SplashContainer>
+      </div>
     );
   }
 }

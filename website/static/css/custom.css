@@ -1,4 +1,26 @@
-/* your custom css */
+
+.hero {
+  position: relative;
+  color: #fff;
+  background: #EE5152;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero .logo {
+  height: 300px;
+}
+
+.hero .title {
+  font-family: $mainFont;
+  font-weight: 100;
+  font-size: 60px;
+}
+.hero small {
+  font-family: $mainFont;
+  font-weight: 100;
+  font-size: 30px;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }

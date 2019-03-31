@@ -23,19 +23,15 @@ const siteConfig = {
     secondaryColor: '#242629',
   },
 
-  /* Custom fonts for website */
-  /*
   fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
+    mainFont: [
+      'Roboto',
+      'Helvetica Neue',
+      'Helvetica',
+      'sans-serif'
     ]
   },
-  */
+
 
   copyright: `Copyright © ${new Date().getFullYear()} Chris Kalmar`,
 
@@ -43,7 +39,13 @@ const siteConfig = {
     theme: 'tomorrow-night',
   },
 
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+  ],
+
+  stylesheets: [
+    '//fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,400',
+  ],
 
   onPageNav: 'separate',
 
