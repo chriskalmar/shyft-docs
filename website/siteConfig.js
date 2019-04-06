@@ -1,4 +1,3 @@
-
 const siteConfig = {
   title: 'Shyft',
   tagline: 'A server-side framework for building powerful GraphQL APIs',
@@ -9,9 +8,9 @@ const siteConfig = {
   organizationName: 'chriskalmar',
 
   headerLinks: [
-    {doc: 'docs', label: 'Docs'},
-    {doc: 'api', label: 'API'},
-    {href: "https://github.com/chriskalmar/shyft", label: "GitHub" },
+    { doc: 'docs', label: 'Docs' },
+    { doc: 'api', label: 'API' },
+    { href: 'https://github.com/chriskalmar/shyft', label: 'GitHub' },
   ],
 
   headerIcon: 'img/shyft-logo-white-small.svg',
@@ -20,18 +19,13 @@ const siteConfig = {
 
   colors: {
     primaryColor: '#EE5152',
-    secondaryColor: '#242629',
+    secondaryColor: '#3E3452',
+    tertiaryColor: '#62A286',
   },
 
   fonts: {
-    mainFont: [
-      'Roboto',
-      'Helvetica Neue',
-      'Helvetica',
-      'sans-serif'
-    ]
+    mainFont: ['Roboto', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
   },
-
 
   copyright: `Copyright © ${new Date().getFullYear()} Chris Kalmar`,
 
@@ -39,9 +33,7 @@ const siteConfig = {
     theme: 'tomorrow-night',
   },
 
-  scripts: [
-    'https://buttons.github.io/buttons.js',
-  ],
+  scripts: ['https://buttons.github.io/buttons.js'],
 
   stylesheets: [
     '//fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,400',

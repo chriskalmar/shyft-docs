@@ -6,7 +6,6 @@
     />
   </a>
 </p>
-<br />
 
 # Shyft / Docs
 

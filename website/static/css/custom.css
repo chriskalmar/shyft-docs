@@ -1,5 +1,16 @@
 
+::selection {
+  color: #fff;
+  background: $secondaryColor;
+}
+
+.headerTitleWithLogo {
+  font-family: $mainFont;
+  font-weight: 100;
+}
+
 .hero {
+  padding-top: 20px;
   position: relative;
   color: #fff;
   background: #EE5152;
@@ -8,24 +19,67 @@
 }
 
 .hero .logo {
-  height: 300px;
+  height: 200px;
 }
 
 .hero .title {
   font-family: $mainFont;
   font-weight: 100;
-  font-size: 60px;
+  font-size: 70px;
+  margin-top: 0px;
+
 }
+
 .hero small {
   font-family: $mainFont;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 24px;
+}
+
+.promoSection {
+  padding: 20px;
+}
+
+.promoSection .button {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 10px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+}
+
+.promoSection .button:hover {
+  color: $primaryColor;
+  background: #fff;
+}
+
+.nav-footer {
+  background: $secondaryColor;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .hero .logo {
+    height: 300px !important;
+  }
+
+  .hero .title {
+    font-size: 110px;
+  }
+
+  .hero small {
+    font-size: 30px;
+  }
+
 }
 
 @media only screen and (max-width: 1023px) {
