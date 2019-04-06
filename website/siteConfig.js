@@ -47,7 +47,8 @@ const siteConfig = {
   ogImage: 'img/docusaurus.png',
   twitterImage: 'img/docusaurus.png',
 
-  repoUrl: 'https://github.com/chriskalmar/shyft',
+  codeRepoUrl: 'https://github.com/chriskalmar/shyft',
+  websiteRepoUrl: 'https://github.com/chriskalmar/shyft-docs',
   stargazersUrl: '/chriskalmar/shyft/stargazers',
 };
 

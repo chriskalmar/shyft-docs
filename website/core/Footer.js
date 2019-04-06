@@ -39,15 +39,17 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href={this.props.config.repoUrl}>GitHub</a>
+            <a href={this.props.config.codeRepoUrl}>GitHub Repo</a>
+            <a href={this.props.config.websiteRepoUrl}>Website Repo</a>
             <a
               className="github-button"
-              href={this.props.config.repoUrl}
+              href={this.props.config.codeRepoUrl}
               data-icon="octicon-star"
               data-count-href={this.props.config.stargazersUrl}
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
+              aria-label="Star this project on GitHub"
+            >
               Star
             </a>
           </div>
