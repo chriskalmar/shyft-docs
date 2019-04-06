@@ -1,5 +1,7 @@
 {
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "extends": [
     "prettier",
     "plugin:react/recommended"
@@ -9,6 +11,11 @@
   },
   "env": {
     "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "16.x"
+    }
   },
   "rules": {
     "prettier/prettier": "error",

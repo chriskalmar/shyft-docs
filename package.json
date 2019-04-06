@@ -5,6 +5,9 @@
   "repository": "https://github.com/chriskalmar/shyft-docs",
   "author": "Chris Kalmar <christian.kalmar@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint website/"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
