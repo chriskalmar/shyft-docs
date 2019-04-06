@@ -83,7 +83,7 @@ body {
 
 .featureSection .blockImage,
 .featureSection img {
-  height: 100px;
+  height: 140px;
 }
 
 .featureSection .intro {
@@ -96,7 +96,7 @@ body {
 
 
 .featureGrid {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .featureGrid h2 span span {
@@ -113,6 +113,14 @@ body {
   font-size: 14px;
   text-align: right;
 }
+
+
+.gridBlock .threeByGridBlock {
+  display: block !important;
+  margin-bottom: 30px;
+}
+
+
 
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
