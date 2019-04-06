@@ -50,6 +50,11 @@ const siteConfig = {
   codeRepoUrl: 'https://github.com/chriskalmar/shyft',
   websiteRepoUrl: 'https://github.com/chriskalmar/shyft-docs',
   stargazersUrl: '/chriskalmar/shyft/stargazers',
+
+  scrollToTop: true,
+  scrollToTopOptions: {
+    backgroundColor: '#EE5152AA',
+  },
 };
 
 module.exports = siteConfig;
