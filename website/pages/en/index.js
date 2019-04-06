@@ -1,36 +1,17 @@
-
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
+    const { siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
-
-    const SplashContainer = props => (
-      <div className="homeContaine hero">
-        <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
-        </div>
-      </div>
-    );
-
-
-
-    const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        {siteConfig.title}
-        <small>{siteConfig.tagline}</small>
-      </h2>
-    );
 
     const PromoSection = props => (
       <div className="section promoSection">
@@ -51,12 +32,12 @@ class HomeSplash extends React.Component {
     return (
       <div className="hero">
         <div className="inner">
-          <img className="logo" src={`${baseUrl}img/shyft-logo-white.svg`} alt="Shyft Logo" />
-
-          <br />
-          <h2 className="title">
-            {siteConfig.title}
-          </h2>
+          <img
+            className="logo"
+            src={`${baseUrl}img/shyft-logo-white.svg`}
+            alt="Shyft Logo"
+          />
+          <h2 className="title">{siteConfig.title}</h2>
           <small>{siteConfig.tagline}</small>
 
           <PromoSection>
@@ -71,33 +52,103 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = '' } = this.props;
 
-    const Block = props => (
-      <Container
-        padding={['bottom', 'top']}
-        id={props.id}
-        background={props.background}>
+    const Features = () => (
+      <Container>
         <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
+          align="left"
+          layout="threeColumn"
+          className="featuresGrid"
+          contents={[
+            {
+              title: '<span>Source of Truth</span>',
+              content:
+                'Keep type definitions, validation rules, permissions settings and documentation in one place - the model.',
+            },
+            {
+              title: '<span>Generators</span>',
+              content:
+                'Generate a strict GraphQL layer and persistence layer from the same model.',
+            },
+            {
+              title: '<span>Permissions</span>',
+              content:
+                'Shyft comes with a powerful permission framework. From simple role-based access to complex data-driven access rules - Shyft has got you covered.',
+            },
+
+            {
+              title: '<span>Filters</span>',
+              content:
+                'Combine `AND` and `OR` filters, apply deeply nested selectors or write your own pre-filtering code - Shyft has it all.',
+            },
+            {
+              title: '<span>Workflows</span>',
+              content:
+                'Build complex business workflows with fine-grained control over access and input fields.',
+            },
+            {
+              title: '<span>Pagination</span>',
+              content:
+                'Go with a traditional limit/offset-based approach or jump onto the cursor-based pagination train.',
+            },
+
+            {
+              title: '<span>Hooks</span>',
+              content:
+                'Define your own hooks on input and output to modify data as needed.',
+            },
+            {
+              title: '<span>Performance</span>',
+              content:
+                'Shyft uses the popular [DataLoader](https://github.com/graphql/dataloader) utility to fetch data in a performant manner.',
+            },
+            {
+              title: '<span>CRUD+</span>',
+              content:
+                "Every entity is equipped with standard mutations. Replace them or add new ones - it's up to you.",
+            },
+
+            {
+              title: '<span>Validation</span>',
+              content:
+                'Shyft lets you bring your own validation framework to check input fields.',
+            },
+            {
+              title: '<span>I18n Inside</span>',
+              content:
+                'We baked internationalization into Shyft right from the start.',
+            },
+            {
+              title: '<span>TypeScript</span>',
+              content: 'Enjoy an awesome DX powered by TypeScript.',
+            },
+
+            {
+              title: '<span>Actions</span>',
+              content:
+                'For more complex data fetching and mutation jobs Shyft provides a place to build your own queries and mutations.',
+            },
+            {
+              title: '<span>Relay Connections</span>',
+              content:
+                'Move inside the graph from relation to relation using the convenient Relay standard.',
+            },
+            {
+              title: '<span>More</span>',
+              content:
+                'There is even more: hidden fields, dynamic field resolvers, mock data, migrations, ...',
+            },
+          ]}
         />
       </Container>
     );
-
 
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          {/* <Features /> */}
-          {/* <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase /> */}
+          <Features />
         </div>
       </div>
     );

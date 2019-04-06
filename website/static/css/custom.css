@@ -63,6 +63,16 @@
   background: $secondaryColor;
 }
 
+
+.featuresGrid h2 span span {
+  color: $secondaryColor;
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 24px;
+  border-bottom: 2px solid $primaryColor;
+}
+
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
