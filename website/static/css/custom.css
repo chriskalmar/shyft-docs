@@ -81,6 +81,11 @@ body {
   font-size: 26px;
 }
 
+.featureSection .blockImage,
+.featureSection img {
+  height: 100px;
+}
+
 .featureSection .intro {
   text-align: center;
 }
@@ -100,6 +105,13 @@ body {
   font-weight: 400;
   font-size: 24px;
   border-bottom: 2px solid $primaryColor;
+}
+
+.featureSection .attribution {
+  margin-top: 30px;
+  color: #999;
+  font-size: 14px;
+  text-align: right;
 }
 
 
