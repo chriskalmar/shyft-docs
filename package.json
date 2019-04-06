@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/chriskalmar/shyft-docs",
   "author": "Chris Kalmar <christian.kalmar@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
 }
