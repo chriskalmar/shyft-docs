@@ -37,8 +37,8 @@ class HomeSplash extends React.Component {
             src={`${baseUrl}img/shyft-logo-white.svg`}
             alt="Shyft Logo"
           />
-          <h2 className="title">{siteConfig.title}</h2>
-          <small>{siteConfig.tagline}</small>
+          <h1 className="title">{siteConfig.title}</h1>
+          <h2>{siteConfig.tagline}</h2>
 
           <PromoSection>
             <Button href={docUrl('docs.html')}>Getting Started</Button>
@@ -55,11 +55,21 @@ class Index extends React.Component {
     const { config: siteConfig, language = '' } = this.props;
 
     const Features = () => (
-      <Container>
+      <Container className="featureSection" align="right">
+        <div className="intro">
+          <h2>How Shyft can help you and your project?</h2>
+          <p>
+            Shyft was developed 🖥 and battle-tested ⚔️ alongside numerous
+            real-life projects. Features were build 🏗 based on actual use-cases
+            💼. Shyft takes care of the simple and the complex parts in your
+            project so you can focus 🔬 on the actual business case.
+          </p>
+        </div>
+
         <GridBlock
           align="left"
           layout="threeColumn"
-          className="featuresGrid"
+          className="featureGrid"
           contents={[
             {
               title: '<span>Source of Truth</span>',

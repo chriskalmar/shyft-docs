@@ -1,3 +1,7 @@
+body {
+  font-family: $mainFont;
+  font-weight: 300;
+}
 
 ::selection {
   color: #fff;
@@ -30,7 +34,7 @@
 
 }
 
-.hero small {
+.hero h2 {
   font-family: $mainFont;
   font-weight: 100;
   font-size: 24px;
@@ -64,7 +68,28 @@
 }
 
 
-.featuresGrid h2 span span {
+
+.featureSection h2 {
+  color: $secondaryColor;
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.featureSection .intro {
+  text-align: center;
+}
+
+.featureSection .intro p {
+  font-size: 18px;
+}
+
+
+.featureGrid {
+  margin-top: 30px;
+}
+
+.featureGrid h2 span span {
   color: $secondaryColor;
   font-family: $mainFont;
   font-weight: 400;
@@ -86,8 +111,16 @@
     font-size: 110px;
   }
 
-  .hero small {
+  .hero h2 {
     font-size: 30px;
+  }
+
+  .featureSection h2 {
+    font-size: 30px;
+  }
+
+  .featureSection .intro p {
+    font-size: 22px;
   }
 
 }

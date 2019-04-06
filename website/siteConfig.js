@@ -36,7 +36,7 @@ const siteConfig = {
   scripts: ['https://buttons.github.io/buttons.js'],
 
   stylesheets: [
-    '//fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,400',
+    '//fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,400',
   ],
 
   onPageNav: 'separate',
