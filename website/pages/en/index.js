@@ -45,6 +45,9 @@ class HomeSplash extends React.Component {
             <Button href={docUrl('api.html')}>API Reference</Button>
           </PromoSection>
         </div>
+        <div className="announcement">
+          🚨 Shyft API is still undergoing changes 🚨
+        </div>
       </div>
     );
   }
